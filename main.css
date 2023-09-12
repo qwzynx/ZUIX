@@ -1,0 +1,139 @@
+/*rgb(224, 211, 211) for white pinkish
+rgb(25, 21, 29) for black purpleish*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+:root {
+  --text: rgb(0, 0, 0);
+  --background: rgb(255, 255, 255);
+  --primary: rgb(69, 61, 121);
+  --secondary: rgb(129, 150, 115);
+  --accent: rgb(211, 23, 104);
+  --font: poppins;
+  --alt-font: Nunito Sans;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: rgb(255, 255, 255);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: var(--secondary);
+  top: 0px;
+  height: 70px;
+  width: 100%;
+  z-index: 2;
+}
+h1 {
+  color: black;
+  font-family: orbitron;
+  font-size: 45px;
+}
+
+.container1 {
+  margin-top: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  position: relative;
+  top: 9px;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 30px !important;
+}
+.infos {
+  font-size: 25px;
+  color: var(--text);
+  font-family: var(--font);
+}
+
+.container-exp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1.exp {
+  font-size: 38px;
+}
+p.exp {
+  font-size: 18px;
+  color: black;
+  width: 550px;
+  font-family: var(--alt-font);
+}
+
+.container-buttons {
+  display: grid;
+  grid-template-columns: 245px 660px 10px 660px;
+  grid-template-rows: 500px;
+}
+.showoff-b {
+  grid-area: 1 / 2;
+  width: 660px;
+  height: 500px;
+  position: relative;
+  cursor: pointer;
+}
+.showoff1-b {
+  grid-area: 1 / 4;
+  width: 660px;
+  height: 500px;
+  position: relative;
+  cursor: pointer;
+}
+.showoff-img {
+  height: 500px;
+  width: 660px;
+}
+.text-on-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  font-size: 28px;
+  color: var(--text);
+  font-family: Orbitron;
+  transition: color 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.showoff-edit {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary);
+  opacity: 0.5;
+  transition: opacity 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.showoff-b:hover .showoff-edit {
+  opacity: 0;
+}
+.showoff-b:hover .text-on-b {
+  color: var(--accent);
+}
+.showoff1-b:hover .showoff-edit {
+  opacity: 0;
+}
+.showoff1-b:hover .text-on-b {
+  color: var(--accent);
+}
