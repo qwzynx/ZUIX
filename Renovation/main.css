@@ -1,0 +1,47 @@
+/*rgb(224, 211, 211) for white pinkish
+rgb(25, 21, 29) for black purpleish*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+:root {
+  --text: rgb(0, 0, 0);
+  --background: rgb(255, 255, 255);
+  --primary: rgb(69, 61, 121);
+  --secondary: rgb(129, 150, 115);
+  --accent: rgb(211, 23, 104);
+  --font: poppins;
+  --alt-font: Nunito Sans;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: var(--secondary);
+  top: 0px;
+  height: 70px;
+  width: 100%;
+  z-index: 2;
+}
+
+h1 {
+  color: black;
+  font-family: orbitron;
+  font-size: 45px;
+}
+
