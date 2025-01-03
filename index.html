@@ -7,13 +7,13 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="projects.css">
-    
-
+    <link rel="stylesheet" href="categories.css">
+    <link rel="icon" href="zuix inc.png">
     <title>HOME</title>
   </head>
   <body>
     <header>
-      <img src="Photos/logo copy.png" alt="" id="logo">
+      <img src="zuix inc.png" alt="" id="logo">
       <a href="index.html" style="text-decoration: none; color: #000;">
         <span class="material-symbols-outlined" style="font-size: 70px !important; cursor: pointer; color: rgb(225, 173, 83);">
           home
@@ -24,41 +24,41 @@
 
 
     <div class="container-background">
-      <h1 class="catching-sologan">We Make Your Dream House</h1>
-      <h1 class="catching-sologan1">The Best In Greater Toronto Area</h1>
-      <div class="tempdiv">
-        <h1 class="temptext">&#8226; Home Renovation</h1>
-        <h1 class="temptext">&#8226; Basement Finishing</h1>
-        <h1 class="temptext">&#8226; Bathroom renovation</h1>
-        <h1 class="temptext">&#8226; Structual Wall Remover</h1>
+
+      <div id="slogans">
+        <h1>We Make Your Dream House</h1>
+        <h1 id="slogan2">The Best In Greater Toronto Area</h1>
       </div>
+
+
       <img src="Photos/first background.webp" class="background">
+
       
-      <iframe name="hiddencon" style="display: none;" onload="if(submitted){window.location='Renovation/submitted.html';}"></iframe>
-      <form class="formem"
-        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScuu4M7l7rVO8yg06pOy9mXsBRdO0J2BzAoDWkrXIc9o0q3BA/formResponse"
-        method="post" target="hiddencon" onsubmit="submitted=true">
-        <br>
-        <label class="list-labels">Name</label>
-        <input type="text" name="entry.1997203300" autocomplete="off" class="list-inp-t" required>
+      <form class="formem" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="97ed06f1-a854-43fc-bd62-4d4c9a29c3e7">
+        <label for="name" class="list-labels">Name</label>
+        <input type="text" name="name" autocomplete="off" class="list-inp-t" required>
 
-        <label class="list-labels">Phone Number</label>
-        <input type="text" inputmode="numeric" pattern="[0-9]+" name="entry.625423551" autocomplete="off" class="list-inp-t" required>
+        <label for="pNumber" class="list-labels">Phone Number</label>
+        <input type="text" inputmode="numeric" pattern="[0-9]+" name="pNumber" autocomplete="off" class="list-inp-t" required>
 
-        <label class="list-labels">Email</label>
-        <input type="email" name="entry.1073932747" autocomplete="off" class="list-inp-t" required>
+        <label for="email" class="list-labels">Email</label>
+        <input type="email" name="email" autocomplete="off" class="list-inp-t" required>
+
         <p class="list-labels">Type Of Resident</p>
+
         <div>
-          <label class="list-labels">Condo</label>
-          <input type="radio" name="entry.717910916" value="Cando" autocomplete="off" class="list-inp-r" required>
+          <label for="houseType" class="list-labels" style="color: black;">Condo</label>
+          <input type="radio" name="houseType" value="Cando" autocomplete="off" class="list-inp-r" required>
         </div>
+
         <div>
-          <label class="list-labels">House</label>
-          <input type="radio" name="entry.717910916" value="House" autocomplete="off" class="list-inp-r" required>
+          <label for="houseType" class="list-labels" style="color: black;">House</label>
+          <input type="radio" name="houseType" value="House" autocomplete="off" class="list-inp-r" required>
         </div>
       
-        <label class="list-labels">Message</label>
-        <input type="text" name="entry.2087598587" autocomplete="off" class="list-inp-t" required>
+        <label for="messages" class="list-labels" >Message</label>
+        <textarea name="messages" class="list-inp-t" required></textarea>
       
         <div>
           <button type="submit" class="list-inp-b">Submit</button>
@@ -79,6 +79,63 @@
           @zuix.inc
         </a>
       </div>
+
+      <br>
+
+      <div class="cat-center" style="column-gap: 20px;">
+        <div class="categories">
+          <p>Home Renovation</p>
+          <div class="dark-overlay"></div>
+        </div>
+        <div class="categories">
+          <div class="dark-overlay"></div>
+          <p>Basement Finishing</p>
+        </div>
+        <div class="categories">
+          <div class="dark-overlay"></div>
+          <p>Bathroom Renovation</p>
+        </div>
+        <div class="categories">
+          <div class="dark-overlay"></div>
+          <p>Structual Wall Remover</p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="center">
+        <h1 style="color: var(--secondary); text-align: center;">OUR PROJECTS</h1>
+      </div>
+
+      <br>
+
+      <div class="center" style="row-gap: 20px; flex-direction: column;">
+        <div class="projects">
+          <img src="home-renovations.jpg" alt="">
+          <div class="title-description" style="row-gap: 10px;">
+            <p class="pTitle">Title</p>
+            <p class="d-d">Date, Year</p>
+            <p class="d-d">Description</p>
+          </div>
+        </div>
+        <div class="projects">
+          <img src="home-renovations.jpg" alt="">
+          <div class="title-description" style="row-gap: 10px;">
+            <p class="pTitle">Title</p>
+            <p class="d-d">Date, Year</p>
+            <p class="d-d">Description</p>
+          </div>
+        </div>
+        <div class="projects">
+          <img src="home-renovations.jpg" alt="">
+          <div class="title-description" style="row-gap: 10px;">
+            <p class="pTitle">Title</p>
+            <p class="d-d">Date, Year</p>
+            <p class="d-d">Description</p>
+          </div>
+        </div>
+      </div>
+
 
     <script src="main.js"></script>
   </body>
