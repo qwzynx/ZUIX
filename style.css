@@ -1,0 +1,338 @@
+/*rgb(224, 211, 211) for white pinkish
+rgb(25, 21, 29) for black purpleish*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+:root {
+  --text: rgb(0, 0, 0);
+  --background: rgb(0, 0, 0);
+  --primary: rgb(69, 61, 121);
+  --secondary: rgb(225, 173, 83);
+  --accent: rgb(211, 23, 104);
+  --font: poppins;
+  --alt-font: Nunito Sans;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--background);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: black;
+  top: 0px;
+  height: 10vh;
+  width: 100%;
+  z-index: 4;
+  border-radius: 0px 0px 40px 40px;
+  box-shadow: 0px 0px 10px;
+}
+h1 {
+  color: white;
+  font-family: orbitron;
+  font-size: 45px;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 260%;
+}
+
+.container-background {
+  position: relative;
+}
+
+.background {
+  margin-top: -8%;
+  width: 100%;
+  filter: brightness(70%) blur(2px);
+}
+/*
+.catching-sologan {
+  z-index: 1;
+  position: absolute;
+  top: 38%;
+  color: whitesmoke;
+  margin-left: 10px;
+}
+.catching-sologan1 {
+  font-size: 30px;
+  z-index: 1;
+  position: absolute;
+  top: 38%;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+  margin-top: 44px;
+}
+*/
+#slogans {
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  margin-left: 1vw;
+  top: 40%;
+  z-index: 1;
+  flex-direction: column;
+}
+
+.formem {
+  overflow-y: hidden;
+  z-index: 2;
+  position: absolute;
+  left: 80%;
+  top: 30%;
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 15vw;
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(145, 104, 33);
+  animation: spin 2s infinite alternate linear;
+}
+
+@keyframes spin {
+  0% {
+    box-shadow: 5px 0px 10px rgb(145, 104, 33);
+  }
+  25% {
+    box-shadow: 0px 5px 10px rgb(145, 104, 33);
+  }
+  50% {
+    box-shadow: -5px 0px 10px rgb(145, 104, 33);
+  }
+  75% {
+    box-shadow: 0px -5px 10px rgb(145, 104, 33);
+  }
+  100% {
+    box-shadow: 5px 0px 10px rgb(145, 104, 33);
+  }
+}
+
+.list-labels {
+  color: white;
+  font-family: var(--font);
+  font-size: 100%;
+}
+.list-inp-t {
+  background-color: white;
+  font-family: var(--font);
+  height: 15px;
+  padding-left: 5px;
+  border-radius: 5px;
+  outline-style: none;
+  width: 12vw;
+}
+.formem textarea {
+  height: 100px;
+  width: 260px;
+  max-width: 85%;
+  max-height: 20%;
+}
+.list-inp-r {
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+}
+.list-inp-b {
+  margin-top: 8px;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  border-color: transparent;
+  font-family: var(--font);
+  cursor: pointer;
+  box-shadow: 1px 1px 2px;
+}
+
+.lisss{
+  overflow-y: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background-color: var(--secondary);
+  margin-top: 5px;
+}
+.icons {
+  position: relative;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  font-size: 40px !important;
+}
+.infos {
+  text-align: center;
+  font-size: 30px;
+  color: var(--text);
+  font-family: var(--font);
+  cursor: pointer;
+  text-decoration: none;
+  transition: text-shadow 0.3s;
+}
+.infos:nth-child(2) {
+  cursor: text;
+}
+.infos:hover {
+  text-shadow: 0px 0px 18px;
+}
+.TBM {
+  color: var(--secondary);
+  text-align: center;
+
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+
+  h1 {
+    color: whitesmoke;
+    font-family: orbitron;
+    font-size: 50px;
+  }
+
+  #slogans {
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    margin-left: 1vw;
+    top: 25%;
+    z-index: 1;
+    flex-direction: column;
+  }
+
+  #slogan2 {
+    margin-top: 30px;
+  }
+
+  #logo {
+    height: 230%;
+  }
+
+
+  .container-background {
+    position: relative;
+  }
+
+  .background {
+    margin-top: -40%;
+    height: 900px;
+    width: 100%;
+    filter: brightness(70%) blur(2px);
+    object-fit: cover;
+  }
+
+  .formem {
+    overflow-y: hidden;
+    z-index: 2;
+    position: sticky;
+    top: 30%;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(145, 104, 33);
+    animation: spin 2s infinite alternate linear;
+  }
+  .formem textarea {
+    height: 100px;
+    width: 350px;
+    max-width: 85%;
+    max-height: 20%;
+  }
+
+  .list-labels {
+    color: white;
+    font-family: var(--font);
+    font-size: 16px;
+  }
+
+  .list-inp-t {
+    background-color: white;
+    font-family: var(--font);
+    height: 15px;
+    padding-left: 5px;
+    border-radius: 5px;
+    outline-style: none;
+    width:85%;
+  }
+
+  .list-inp-r {
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+
+  }
+
+  .list-inp-b {
+    margin-top: 8px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border-color: transparent;
+    font-family: var(--font);
+    cursor: pointer;
+    box-shadow: 1px 1px 2px;
+  }
+
+  .lisss {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: var(--secondary);
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+
+  .icons {
+    position: relative;
+    top: 8px;
+    width: 25px;
+    height: 25px;
+    font-size: 40px !important;
+    margin-right: 1vw;
+  }
+
+  .infos {
+    text-align: center;
+    font-size: 30px;
+    color: var(--text);
+    font-family: var(--font);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .TBM {
+    font-size: 8vw;
+  }
+}
